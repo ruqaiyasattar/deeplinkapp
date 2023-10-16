@@ -5,11 +5,8 @@ import 'package:uni_links/uni_links.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-
 
 class MyHomePage extends StatefulWidget {
-
   final String title;
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
@@ -17,46 +14,37 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage>  {
-
+class _MyHomePageState extends State<MyHomePage> {
   late StreamSubscription _sub;
-
-  //This function sets up a subscription to a stream of deep links. When a deep link is received, the code inside this function is executed.
+  //This function sets up a subscription to a stream of deep links.
+  // When a deep link is received, the code inside this function is executed.
   Future<void> initdeeplink() async {
-
-    //we used StreamBuilder here because unilinks subscribe to a stream to detect whether app have started normally or by the links configured.
-    _sub = linkStream.listen((url) {
-      if (!mounted) return;
-      setState(
-            () {
-          // Here you have the URL data
-          Uri uri = Uri.parse(url!);
-
-          _navigateWithDeepLink(uri);
-
-          final myData = Provider.of<MyData>(context, listen: false);
-
-          // Convert the Uri to a string and update myData
-          myData.updateDataWithUri(uri.toString());
-
-          if (kDebugMode) {
-            print('deeplink uri -> $uri');
-          }
-        },
-      );
-    }, onError: (Object err) {
-      if (kDebugMode) {
-        print("$err");
-      }
-    });
+    //we used StreamBuilder here because unilinks subscribe to a stream to detect
+    // whether app have started normally or by the links configured.
+    _sub = linkStream.listen(
+      (url) {
+        if (!mounted) return;
+        setState(
+          () {
+            // Here you have the URL data
+            Uri uri = Uri.parse(url!);
+            _navigateWithDeepLink(uri);
+            final myData = Provider.of<MyData>(context, listen: false);
+            // Convert the Uri to a string and update myData
+            myData.updateDataWithUri(uri.toString());
+          },
+        );
+      },
+    );
   }
 
-  //This function takes a Uri object, then examines the path component of the URL and uses Navigator.pushNamed to navigate accordingly.
+  //This function takes a Uri object, then examines the path
+  // component of the URL and uses Navigator.pushNamed to navigate accordingly.
   void _navigateWithDeepLink(Uri deepLink) {
-    final path = deepLink.path.replaceAll('/link', '');
+    final path = deepLink.path.toString();
     if (path == '/') {
       Navigator.pushNamed(context, '/');
-      return ;
+      return;
     }
     if (path == '/page-one/page-two') {
       Navigator.pushNamed(context, '/page-one');
@@ -64,9 +52,6 @@ class _MyHomePageState extends State<MyHomePage>  {
       return;
     }
     Navigator.pushNamed(context, path);
-    if (kDebugMode) {
-      print('path -> $path');
-    }
   }
 
   @override
@@ -122,5 +107,4 @@ class _MyHomePageState extends State<MyHomePage>  {
       ),
     );
   }
-
 }

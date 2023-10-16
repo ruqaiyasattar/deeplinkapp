@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:3:4-45:19
+INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:3:4-47:19
 MERGED from [:url_launcher_android] C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-14:19
 MERGED from [:url_launcher_android] C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-14:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\Ruqaiya\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
@@ -14,11 +14,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Ru
 	android:name
 		INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-46:12
-INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-46:12
-INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-46:12
-INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-46:12
-MERGED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-46:12
+ADDED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-48:12
+INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-48:12
+MERGED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-48:12
 MERGED from [:url_launcher_android] C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-16:12
 MERGED from [:uni_links] C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\build\uni_links\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\Ruqaiya\.gradle\caches\transforms-3\006d93cd422dbc43e89591147c2de572\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
@@ -49,11 +49,11 @@ INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app
 		INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-46:12
+		ADDED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-48:12
 		INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-46:12
+		ADDED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:1-48:12
 		INJECTED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Ruqaiya\AndroidStudioProjects\deeplinkdemoapp\android\app\src\main\AndroidManifest.xml:1:11-69
